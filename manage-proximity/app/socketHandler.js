@@ -1,0 +1,2 @@
+var WebSocketServer = require('websocket').server;
+

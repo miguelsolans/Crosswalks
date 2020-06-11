@@ -1,0 +1,25 @@
+{
+  "name": "manage-proximity",
+  "version": "1.0.0",
+  "description": "Microservice to calculate distances",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon app",
+    "start": "node app"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async-redis": "^1.1.7",
+    "axios": "^0.19.2",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-ws": "^4.0.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
+    "redis": "^3.0.2",
+    "websocket": "^1.0.31"
+  }
+}

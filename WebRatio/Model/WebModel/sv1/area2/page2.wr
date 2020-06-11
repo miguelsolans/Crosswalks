@@ -1,0 +1,42 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="200" gr:y="20" id="sv1#area2#page2" name="New Crosswalk" landmark="true">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv1#area2#page2#enu1" name="New Crosswalk" linkOrder="sv1#area2#page2#enu1#ln3 sv1#area2#page2#enu1#ln4">
+      <Field id="sv1#area2#page2#enu1#fld1" name="Start Latitude" type="decimal" modifiable="true"/>
+      <Field id="sv1#area2#page2#enu1#fld2" name="Start Longitude" type="decimal" modifiable="true"/>
+      <Field id="sv1#area2#page2#enu1#fld3" name="End Latitude" type="decimal" modifiable="true"/>
+      <Field id="sv1#area2#page2#enu1#fld4" name="End Longitude" type="decimal" modifiable="true"/>
+      <Link id="sv1#area2#page2#enu1#ln3" name="Cancel" to="sv1#area2#page4" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv1#area2#page2#enu1#ln4" name="New" to="sv1#miu1" type="normal" validate="true">
+        <LinkParameter id="sv1#area2#page2#enu1#ln4#par5" name="End Latitude_End Latitude" source="sv1#area2#page2#enu1#fld3" target="sv1#miu1.mov1#opm1#icu1#icp4"/>
+        <LinkParameter id="sv1#area2#page2#enu1#ln4#par6" name="End Longitude_End Longitude" source="sv1#area2#page2#enu1#fld4" target="sv1#miu1.mov1#opm1#icu1#icp5"/>
+        <LinkParameter id="sv1#area2#page2#enu1#ln4#par7" name="Start Latitude_Start Latitude" source="sv1#area2#page2#enu1#fld1" target="sv1#miu1.mov1#opm1#icu1#icp2"/>
+        <LinkParameter id="sv1#area2#page2#enu1#ln4#par8" name="Start Longitude_Start Longitude" source="sv1#area2#page2#enu1#fld2" target="sv1#miu1.mov1#opm1#icu1#icp3"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area2#page2#enu1">
+          <layout:Field field="sv1#area2#page2#enu1#fld1"/>
+          <layout:Field field="sv1#area2#page2#enu1#fld2"/>
+          <layout:Field field="sv1#area2#page2#enu1#fld3"/>
+          <layout:Field field="sv1#area2#page2#enu1#fld4"/>
+          <layout:Link link="sv1#area2#page2#enu1#ln3"/>
+          <layout:Link link="sv1#area2#page2#enu1#ln4"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

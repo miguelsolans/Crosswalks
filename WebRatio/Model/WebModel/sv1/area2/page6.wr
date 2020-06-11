@@ -1,0 +1,78 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="415" gr:y="210" id="sv1#area2#page6" name="Update Crosswalk" landmark="false">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv1#area2#page6#enu6" name="Update Crosswalk" entity="ent3" linkOrder="sv1#area2#page6#enu6#ln39 sv1#area2#page6#enu6#ln5">
+      <Field id="sv1#area2#page6#enu6#fld25" name="oid" type="integer" modifiable="true" attribute="ent3#att6"/>
+      <Link id="sv1#area2#page6#enu6#ln39" name="Update" to="sv1#miu3" type="normal" validate="true">
+        <LinkParameter id="sv1#area2#page6#enu6#ln39#par59" name="NewEndLatitude_NewEndLatitude" source="sv1#area2#page6#enu6#fld28" target="sv1#miu3.mov1#opm2#icu2#icp9"/>
+        <LinkParameter id="sv1#area2#page6#enu6#ln39#par60" name="NewEndLongitude_NewEndLongitude" source="sv1#area2#page6#enu6#fld29" target="sv1#miu3.mov1#opm2#icu2#icp10"/>
+        <LinkParameter id="sv1#area2#page6#enu6#ln39#par61" name="NewStartLatitude_NewStartLatitude" source="sv1#area2#page6#enu6#fld26" target="sv1#miu3.mov1#opm2#icu2#icp7"/>
+        <LinkParameter id="sv1#area2#page6#enu6#ln39#par62" name="NewStartLongitude_NewStartLongitude" source="sv1#area2#page6#enu6#fld27" target="sv1#miu3.mov1#opm2#icu2#icp8"/>
+        <LinkParameter id="sv1#area2#page6#enu6#ln39#par63" name="CrosswalkToCoordinates.oid(Crosswalks)_PASSING" sourceLinkParameter="sv1#area2#page4#hinu1#ln16#par56" passing="true"/>
+        <LinkParameter id="sv1#area2#page6#enu6#ln39#par64" name="CrosswalkToCoordinates_2.oid(Crosswalks)_PASSING" sourceLinkParameter="sv1#area2#page4#hinu1#ln16#par57" passing="true"/>
+        <LinkParameter id="sv1#area2#page6#enu6#ln39#par75" name="CrosswalkToCoordinates.oid(Crosswalks)_PASSING_CoordinateId1" sourceLinkParameter="sv1#area2#page4#hinu1#ln16#par56" target="sv1#miu3.mov1#opm2#icu2#icp16"/>
+        <LinkParameter id="sv1#area2#page6#enu6#ln39#par76" name="CrosswalkToCoordinates_2.oid(Crosswalks)_PASSING_CoordinateId2" sourceLinkParameter="sv1#area2#page4#hinu1#ln16#par57" target="sv1#miu3.mov1#opm2#icu2#icp17"/>
+      </Link>
+      <Field id="sv1#area2#page6#enu6#fld26" name="NewStartLatitude" type="string" modifiable="true"/>
+      <Field id="sv1#area2#page6#enu6#fld27" name="NewStartLongitude" type="string" modifiable="true"/>
+      <Field id="sv1#area2#page6#enu6#fld28" name="NewEndLatitude" type="string" modifiable="true"/>
+      <Field id="sv1#area2#page6#enu6#fld29" name="NewEndLongitude" type="string" modifiable="true"/>
+      <Link id="sv1#area2#page6#enu6#ln5" name="Delete" to="sv1#miu2" type="normal" validate="true">
+        <LinkParameter id="sv1#area2#page6#enu6#ln5#par13" name="oid_crossWalk" source="sv1#area2#page6#enu6#fld25" target="sv1#miu2.mov1#opm4#icu4#icp1"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area2#page6#enu6">
+          <layout:Field field="sv1#area2#page6#enu6#fld25"/>
+          <layout:Field field="sv1#area2#page6#enu6#fld26"/>
+          <layout:Field field="sv1#area2#page6#enu6#fld27"/>
+          <layout:Field field="sv1#area2#page6#enu6#fld28"/>
+          <layout:Field field="sv1#area2#page6#enu6#fld29"/>
+          <layout:Link link="sv1#area2#page6#enu6#ln39"/>
+          <layout:Link link="sv1#area2#page6#enu6#ln5"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

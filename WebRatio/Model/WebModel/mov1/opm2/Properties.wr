@@ -1,0 +1,24 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="275" gr:y="190" id="mov1#opm2" name="update Crosswalk">
+  <OperationUnits>
+    <InputCollectorUnit id="mov1#opm2#icu2" gr:x="205" gr:y="55">
+      <InputCollectorParameter id="mov1#opm2#icu2#icp10" name="NewEndLongitude"/>
+      <InputCollectorParameter id="mov1#opm2#icu2#icp9" name="NewEndLatitude"/>
+      <InputCollectorParameter id="mov1#opm2#icu2#icp8" name="NewStartLongitude"/>
+      <InputCollectorParameter id="mov1#opm2#icu2#icp7" name="NewStartLatitude"/>
+      <Link id="mov1#opm2#icu2#ln40" name="Flow40" to="mov1#opm2#opg3#mfu4" type="transport" validate="true">
+        <LinkParameter id="mov1#opm2#icu2#ln40#par68" name="CoordinateId2_KeyCondition11 [oid]" source="mov1#opm2#icu2#icp17" target="mov1#opm2#opg3#mfu4#su12#kcond12.ent2#att3"/>
+        <LinkParameter id="mov1#opm2#icu2#ln40#par69" name="NewEndLatitude_latitude" source="mov1#opm2#icu2#icp9" target="mov1#opm2#opg3#mfu4.ent2#att4"/>
+        <LinkParameter id="mov1#opm2#icu2#ln40#par70" name="NewEndLongitude_longitude" source="mov1#opm2#icu2#icp10" target="mov1#opm2#opg3#mfu4.ent2#att5"/>
+      </Link>
+      <InputCollectorParameter id="mov1#opm2#icu2#icp16" name="CoordinateId1"/>
+      <InputCollectorParameter id="mov1#opm2#icu2#icp17" name="CoordinateId2"/>
+      <OKLink id="mov1#opm2#icu2#oln26" name="OKFlow26" to="mov1#opm2#opg3#mfu5">
+        <LinkParameter id="mov1#opm2#icu2#oln26#par72" name="CoordinateId1_KeyCondition13 [oid]" source="mov1#opm2#icu2#icp16" target="mov1#opm2#opg3#mfu5#su13#kcond13.ent2#att3"/>
+        <LinkParameter id="mov1#opm2#icu2#oln26#par73" name="NewStartLatitude_latitude" source="mov1#opm2#icu2#icp7" target="mov1#opm2#opg3#mfu5.ent2#att4"/>
+        <LinkParameter id="mov1#opm2#icu2#oln26#par74" name="NewStartLongitude_longitude" source="mov1#opm2#icu2#icp8" target="mov1#opm2#opg3#mfu5.ent2#att5"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="890" gr:y="50" id="mov1#opm2#okcu3" name="OK Port3"/>
+    <KOCollectorUnit gr:x="890" gr:y="190" id="mov1#opm2#kocu3" name="KO Port3"/>
+  </OperationUnits>
+</OperationModule>

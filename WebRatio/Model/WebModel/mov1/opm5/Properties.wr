@@ -1,0 +1,22 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="635" gr:y="140" id="mov1#opm5" name="set Number of Pedestrians">
+  <OperationUnits>
+    <InputCollectorUnit id="mov1#opm5#icu5" gr:x="30" gr:y="90">
+      <InputCollectorParameter id="mov1#opm5#icu5#icp14" name="NumberPedestrians"/>
+      <InputCollectorParameter id="mov1#opm5#icu5#icp13" name="CrosswalkId"/>
+      <OKLink id="mov1#opm5#icu5#oln20" name="OKFlow20" to="mov1#opm5#mfu3">
+        <LinkParameter id="mov1#opm5#icu5#oln20#par35" name="CrosswalkId_KeyCondition5 [oid]" source="mov1#opm5#icu5#icp13" target="mov1#opm5#mfu3#su5#kcond5.ent3#att6"/>
+        <LinkParameter id="mov1#opm5#icu5#oln20#par36" name="CrosswalkId_pedestrians" source="mov1#opm5#icu5#icp14" target="mov1#opm5#mfu3.ent3#att7"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="525" gr:y="40" id="mov1#opm5#okcu5" name="OK Port5"/>
+    <KOCollectorUnit gr:x="525" gr:y="145" id="mov1#opm5#kocu5" name="KO Port5"/>
+    <ModifyUnit gr:x="310" gr:y="80" id="mov1#opm5#mfu3" name="Update Number Pedestrians" entity="ent3">
+      <Selector id="mov1#opm5#mfu3#su5" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm5#mfu3#su5#kcond5" name="KeyCondition5" predicate="in" implied="false"/>
+        <AttributesCondition id="mov1#opm5#mfu3#su5#acond2" name="AttCondition2" predicate="gteq" booleanOperator="or" implied="false" attributes="ent3#att7" value="0"/>
+      </Selector>
+      <OKLink id="mov1#opm5#mfu3#oln19" name="OKFlow19" to="mov1#opm5#okcu5" automaticCoupling="true"/>
+      <KOLink id="mov1#opm5#mfu3#kln12" name="KOFlow12" to="mov1#opm5#kocu5" automaticCoupling="true"/>
+    </ModifyUnit>
+  </OperationUnits>
+</OperationModule>

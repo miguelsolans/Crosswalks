@@ -1,0 +1,20 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="195" gr:y="100" id="mov1#opm1" name="add Crosswalk">
+  <OperationUnits>
+    <InputCollectorUnit id="mov1#opm1#icu1" gr:x="30" gr:y="60" linkOrder="mov1#opm1#icu1#ln6">
+      <InputCollectorParameter id="mov1#opm1#icu1#icp5" name="End Longitude"/>
+      <InputCollectorParameter id="mov1#opm1#icu1#icp4" name="End Latitude"/>
+      <InputCollectorParameter id="mov1#opm1#icu1#icp3" name="Start Longitude"/>
+      <InputCollectorParameter id="mov1#opm1#icu1#icp2" name="Start Latitude"/>
+      <OKLink id="mov1#opm1#icu1#oln1" name="OKFlow1" to="mov1#opm1#opg1#cru5">
+        <LinkParameter id="mov1#opm1#icu1#oln1#par1" name="Start Latitude_latitude" source="mov1#opm1#icu1#icp2" target="mov1#opm1#opg1#cru5.ent2#att4"/>
+        <LinkParameter id="mov1#opm1#icu1#oln1#par2" name="Start Longitude_longitude" source="mov1#opm1#icu1#icp3" target="mov1#opm1#opg1#cru5.ent2#att5"/>
+      </OKLink>
+      <Link id="mov1#opm1#icu1#ln6" name="Flow6" to="mov1#opm1#opg1#cru6" type="transport" validate="true">
+        <LinkParameter id="mov1#opm1#icu1#ln6#par3" name="End Latitude_latitude" source="mov1#opm1#icu1#icp4" target="mov1#opm1#opg1#cru6.ent2#att4"/>
+        <LinkParameter id="mov1#opm1#icu1#ln6#par4" name="End Longitude_longitude" source="mov1#opm1#icu1#icp5" target="mov1#opm1#opg1#cru6.ent2#att5"/>
+      </Link>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="865" gr:y="240" id="mov1#opm1#okcu1" name="OK New Crosswalk"/>
+    <KOCollectorUnit gr:x="865" gr:y="95" id="mov1#opm1#kocu1" name="KO New Crosswalk"/>
+  </OperationUnits>
+</OperationModule>

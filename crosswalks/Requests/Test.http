@@ -1,0 +1,11 @@
+GET http://localhost:3030/index/
+Content-Type: application/json
+Accept: application/json
+
+###
+
+GET http://localhost:3030/index/test
+Content-Type: application/json
+Accept: application/json
+
+###

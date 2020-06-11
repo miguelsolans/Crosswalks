@@ -1,0 +1,21 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="385" gr:y="100" id="mov1#opm4" name="remove Crosswalk">
+  <OperationUnits>
+    <InputCollectorUnit id="mov1#opm4#icu4" gr:x="30" gr:y="105">
+      <InputCollectorParameter id="mov1#opm4#icu4#icp1" name="crossWalk"/>
+      <OKLink id="mov1#opm4#icu4#oln2" name="OKFlow2" to="mov1#opm4#dlu2">
+        <LinkParameter id="mov1#opm4#icu4#oln2#par11" name="idCrossWalk_KeyCondition2 [oid]" target="mov1#opm4#dlu2#su2#kcond2.ent3#att6" source="mov1#opm4#icu4#icp1"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <DeleteUnit gr:x="315" gr:y="105" id="mov1#opm4#dlu2" name="Delete2" entity="ent3">
+      <Selector id="mov1#opm4#dlu2#su2" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm4#dlu2#su2#kcond2" name="KeyCondition2" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#opm4#dlu2#oln3" name="OKFlow3" to="mov1#opm4#okcu2" automaticCoupling="true"/>
+      <KOLink id="mov1#opm4#dlu2#kln2" name="KOFlow2" to="mov1#opm4#kocu2" automaticCoupling="true"/>
+      <CascadeDeleteRole id="mov1#opm4#dlu2#cdr1" name="coordinates1" role="rel8#role16"/>
+      <CascadeDeleteRole id="mov1#opm4#dlu2#cdr2" name="coordinate2" role="rel9#role18"/>
+    </DeleteUnit>
+    <OKCollectorUnit gr:x="520" gr:y="55" id="mov1#opm4#okcu2" name="OK Port2"/>
+    <KOCollectorUnit gr:x="520" gr:y="175" id="mov1#opm4#kocu2" name="KO Port2"/>
+  </OperationUnits>
+</OperationModule>

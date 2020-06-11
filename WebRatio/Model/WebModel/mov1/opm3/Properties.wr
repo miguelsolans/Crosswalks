@@ -1,0 +1,21 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="660" gr:y="205" id="mov1#opm3" name="set Number Of Cars">
+  <OperationUnits>
+    <InputCollectorUnit id="mov1#opm3#icu3" gr:x="25" gr:y="110">
+      <InputCollectorParameter id="mov1#opm3#icu3#icp12" name="NumberCars"/>
+      <InputCollectorParameter id="mov1#opm3#icu3#icp11" name="CrosswalkId"/>
+      <OKLink id="mov1#opm3#icu3#oln16" name="OKFlow16" to="mov1#opm3#mfu2">
+        <LinkParameter id="mov1#opm3#icu3#oln16#par31" name="NumberCars_cars" source="mov1#opm3#icu3#icp12" target="mov1#opm3#mfu2.ent3#att2"/>
+        <LinkParameter id="mov1#opm3#icu3#oln16#par32" name="CrosswalkId_KeyCondition4 [oid]" source="mov1#opm3#icu3#icp11" target="mov1#opm3#mfu2#su4#kcond4.ent3#att6"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <ModifyUnit gr:x="290" gr:y="100" id="mov1#opm3#mfu2" name="update NumberCars" entity="ent3">
+      <Selector id="mov1#opm3#mfu2#su4" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm3#mfu2#su4#kcond4" name="KeyCondition4" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#opm3#mfu2#oln15" name="OKFlow15" to="mov1#opm3#okcu4" automaticCoupling="true"/>
+      <KOLink id="mov1#opm3#mfu2#kln10" name="KOFlow10" to="mov1#opm3#kocu4" automaticCoupling="true"/>
+    </ModifyUnit>
+    <OKCollectorUnit gr:x="455" gr:y="60" id="mov1#opm3#okcu4" name="OK Port4"/>
+    <KOCollectorUnit gr:x="455" gr:y="165" id="mov1#opm3#kocu4" name="KO Port4"/>
+  </OperationUnits>
+</OperationModule>

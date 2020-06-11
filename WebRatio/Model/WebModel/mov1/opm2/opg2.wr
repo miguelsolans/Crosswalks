@@ -1,0 +1,19 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov1#opm2#opg2" name="Operation Group 1" transaction="true" gr:x="515" gr:y="10">
+  <OperationUnits>
+    <CreateUnit id="mov1#opm2#opg2#cru2" name="New Coordinates Start" gr:x="175" gr:y="0" entity="ent2">
+      <OKLink id="mov1#opm2#opg2#cru2#oln8" name="OKFlow2" to="mov1#opm2#opg2#cru3" automaticCoupling="true"/>
+      <Link id="mov1#opm2#opg2#cru2#ln7" name="Flow7" to="mov1#opm2#opg2#cru4" type="transport" validate="true">
+        <LinkParameter id="mov1#opm2#opg2#cru2#ln7#par27" name="oid_Coordinates.oid(CrosswalkToCoordinates)" source="ent2#att3Array" target="mov1#opm2#opg2#cru4.rel8#role16.ent2#att3"/>
+      </Link>
+    </CreateUnit>
+    <CreateUnit id="mov1#opm2#opg2#cru3" name="New Coordinates End" gr:x="180" gr:y="105" entity="ent2">
+      <OKLink id="mov1#opm2#opg2#cru3#oln11" name="OKFlow4" to="mov1#opm2#opg2#cru4">
+        <LinkParameter id="mov1#opm2#opg2#cru3#oln11#par28" name="oid_Coordinates.oid(CrosswalkToCoordinates_2)" source="ent2#att3Array" target="mov1#opm2#opg2#cru4.rel9#role18.ent2#att3"/>
+      </OKLink>
+    </CreateUnit>
+    <CreateUnit id="mov1#opm2#opg2#cru4" name="New Crosswalk" gr:x="405" gr:y="15" entity="ent3">
+      <OKLink id="mov1#opm2#opg2#cru4#oln17" name="OKFlow17" to="mov1#opm2#okcu3" automaticCoupling="true"/>
+    </CreateUnit>
+  </OperationUnits>
+  <KOLink id="mov1#opm2#opg2#kln7" name="KOFlow7" to="mov1#opm2#kocu3" automaticCoupling="true"/>
+</OperationGroup>

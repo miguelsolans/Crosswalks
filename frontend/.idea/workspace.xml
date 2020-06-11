@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="79d0b522-8654-48af-9b0a-0d82eaf30188" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../AuthService/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../AuthService/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Backend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Environment/auth-variables.env" beforeDir="false" afterPath="$PROJECT_DIR$/../Environment/auth-variables.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Environment/crosswalks-variables.env" beforeDir="false" afterPath="$PROJECT_DIR$/../Environment/crosswalks-variables.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Environment/frontend-variables.env" beforeDir="false" afterPath="$PROJECT_DIR$/../Environment/frontend-variables.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Environment/gateway-variables.env" beforeDir="false" afterPath="$PROJECT_DIR$/../Environment/gateway-variables.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Environment/manager-variables.env" beforeDir="false" afterPath="$PROJECT_DIR$/../Environment/manager-variables.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Environment/mysql-variables.env" beforeDir="false" afterPath="$PROJECT_DIR$/../Environment/mysql-variables.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Environment/redis-variables.env" beforeDir="false" afterPath="$PROJECT_DIR$/../Environment/redis-variables.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crosswalks/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../crosswalks/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AddUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AddUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Notifications.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Notifications.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../manage-proximity/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../manage-proximity/Dockerfile" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1br5d2ihOUOWt5CEST7vVtDhFR2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="79d0b522-8654-48af-9b0a-0d82eaf30188" name="Default Changelist" comment="" />
+      <created>1589377456236</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589377456236</updated>
+      <workItem from="1589377465347" duration="5317000" />
+      <workItem from="1589405294634" duration="666000" />
+      <workItem from="1589469089334" duration="530000" />
+      <workItem from="1590662855640" duration="12330000" />
+      <workItem from="1591102854296" duration="6456000" />
+      <workItem from="1591276406906" duration="15954000" />
+      <workItem from="1591373909581" duration="2069000" />
+      <workItem from="1591630516316" duration="1782000" />
+      <workItem from="1591649499265" duration="2868000" />
+      <workItem from="1591707719736" duration="7515000" />
+      <workItem from="1591726450470" duration="8469000" />
+      <workItem from="1591743273289" duration="710000" />
+      <workItem from="1591878766304" duration="4524000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="104" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589469170737">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="104" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.777@0.23.1280.777" timestamp="1589469170737" />
+    <state width="1259" height="159" key="GridCell.Tab.0.bottom" timestamp="1591743112701">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1259" height="159" key="GridCell.Tab.0.bottom/-1360.32.1360.768/0.0.1280.800@0.0.1280.800" timestamp="1591743112701" />
+    <state width="1259" height="179" key="GridCell.Tab.0.bottom/-1360.55.1360.745/0.23.1280.777@-1360.55.1360.745" timestamp="1590671083330" />
+    <state width="1259" height="159" key="GridCell.Tab.0.bottom/-1360.55.1360.745/0.23.1280.777@0.23.1280.777" timestamp="1591728722725" />
+    <state width="1259" height="189" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1591119038568" />
+    <state width="1259" height="159" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1591709301285" />
+    <state width="1259" height="159" key="GridCell.Tab.0.center" timestamp="1591743112699">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1259" height="159" key="GridCell.Tab.0.center/-1360.32.1360.768/0.0.1280.800@0.0.1280.800" timestamp="1591743112699" />
+    <state width="1259" height="179" key="GridCell.Tab.0.center/-1360.55.1360.745/0.23.1280.777@-1360.55.1360.745" timestamp="1590671083329" />
+    <state width="1259" height="159" key="GridCell.Tab.0.center/-1360.55.1360.745/0.23.1280.777@0.23.1280.777" timestamp="1591728722722" />
+    <state width="1259" height="189" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1591119038565" />
+    <state width="1259" height="159" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1591709301284" />
+    <state width="1259" height="159" key="GridCell.Tab.0.left" timestamp="1591743112697">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1259" height="159" key="GridCell.Tab.0.left/-1360.32.1360.768/0.0.1280.800@0.0.1280.800" timestamp="1591743112697" />
+    <state width="1259" height="179" key="GridCell.Tab.0.left/-1360.55.1360.745/0.23.1280.777@-1360.55.1360.745" timestamp="1590671083328" />
+    <state width="1259" height="159" key="GridCell.Tab.0.left/-1360.55.1360.745/0.23.1280.777@0.23.1280.777" timestamp="1591728722712" />
+    <state width="1259" height="189" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1591119038563" />
+    <state width="1259" height="159" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1591709301277" />
+    <state width="1259" height="159" key="GridCell.Tab.0.right" timestamp="1591743112700">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1259" height="159" key="GridCell.Tab.0.right/-1360.32.1360.768/0.0.1280.800@0.0.1280.800" timestamp="1591743112700" />
+    <state width="1259" height="179" key="GridCell.Tab.0.right/-1360.55.1360.745/0.23.1280.777@-1360.55.1360.745" timestamp="1590671083329" />
+    <state width="1259" height="159" key="GridCell.Tab.0.right/-1360.55.1360.745/0.23.1280.777@0.23.1280.777" timestamp="1591728722723" />
+    <state width="1259" height="189" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1591119038567" />
+    <state width="1259" height="159" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1591709301285" />
+    <state x="428" y="319" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591277634531">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="428" y="319" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1360.32.1360.768/0.0.1280.800@0.0.1280.800" timestamp="1591277634531" />
+    <state x="-1144" y="55" width="932" height="726" key="dock-window-1" timestamp="1591726458385">
+      <screen x="-1360" y="55" width="1360" height="745" />
+    </state>
+    <state x="-1360" y="32" width="1360" height="768" key="dock-window-1/-1360.32.1360.768/0.0.1280.800@0.0.1280.800" timestamp="1591307733230" />
+    <state x="-1139" y="55" width="932" height="583" key="dock-window-1/-1360.55.1360.745/0.0.1280.800@0.0.1280.800" timestamp="1591311436367" />
+    <state x="17" y="23" width="1263" height="777" key="dock-window-1/-1360.55.1360.745/0.23.1280.777@-1360.55.1360.745" timestamp="1591630800681" />
+    <state x="-1144" y="55" width="932" height="726" key="dock-window-1/-1360.55.1360.745/0.23.1280.777@0.23.1280.777" timestamp="1591726458385" />
+    <state x="0" y="23" width="1263" height="777" key="dock-window-2" timestamp="1591633802193">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="0" y="23" width="1263" height="777" key="dock-window-2/-1360.55.1360.745/0.23.1280.777@0.23.1280.777" timestamp="1591633802193" />
+    <state x="296" y="133" width="687" height="534" key="find.popup" timestamp="1591883186699">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="296" y="133" width="687" height="534" key="find.popup/-1360.32.1360.768/0.0.1280.800@0.0.1280.800" timestamp="1591883186699" />
+    <state x="296" y="152" width="687" height="518" key="find.popup/-1360.55.1360.745/0.23.1280.777@0.23.1280.777" timestamp="1591650757278" />
+    <state x="305" y="62" width="670" height="676" key="search.everywhere.popup" timestamp="1591883194129">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="62" width="670" height="676" key="search.everywhere.popup/-1360.32.1360.768/0.0.1280.800@0.0.1280.800" timestamp="1591883194129" />
+    <state x="305" y="83" width="670" height="657" key="search.everywhere.popup/-1360.55.1360.745/0.23.1280.777@0.23.1280.777" timestamp="1591716075225" />
+    <state x="305" y="83" width="670" height="657" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1591374176273" />
+  </component>
+</project>

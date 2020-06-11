@@ -1,0 +1,145 @@
+version: "2"
+
+networks:
+  crosswalks-network:
+    driver: bridge
+
+
+services:
+
+    # AuthService 
+    auth: 
+        container_name: auth-service
+        restart: always
+        env_file: 
+            - ./Environment/auth-variables.env
+        build: ./AuthService
+        volumes: 
+            - ./crosswalk/services/auth
+        networks:
+            - crosswalks-network
+        ports:
+            - "4042:4042"
+        depends_on: 
+            - mongo
+        
+
+    # Crosswalks CRUD REST API
+    crosswalks:
+        container_name: crosswalk-service
+        restart: always
+        env_file: 
+            - ./Environment/crosswalks-variables.env
+        build: ./crosswalks
+        volumes:
+            - ./crosswalk/services/crosswalk
+        networks:
+            - crosswalks-network
+        ports: 
+            - "4041:4041"
+        depends_on:
+            - mysql
+
+
+    # Proximity Manager Service
+    manager:
+        container_name: proximity-manager
+        restart: always
+        env_file: 
+            - ./Environment/manager-variables.env
+        build: ./manage-proximity
+        networks:
+            - crosswalks-network
+        volumes: 
+            - ./crosswalk/manager
+        ports: 
+            - "4043:4043"
+        depends_on:
+            - redis
+            - crosswalks
+
+    # API Gateway
+    gateway:
+        container_name: api-gateway
+        restart: always
+        env_file: 
+            - ./Environment/gateway-variables.env
+        build: ./Backend
+        networks:
+            - crosswalks-network
+        volumes:
+            - ./crosswalk/gateway
+        ports:
+            - "4040:4040"
+        depends_on: 
+            - manager 
+            - auth
+            - crosswalks
+        links:
+            - manager
+            - auth
+            - crosswalks
+
+        
+
+    # Client and Simulators
+    frontend:
+        stdin_open: true
+        container_name: crosswalks-frontend
+        restart: always
+        env_file: 
+            - ./Environment/frontend-variables.env
+        build: ./frontend
+        networks:
+            - crosswalks-network
+        volumes:
+            - ./crosswalk/frontend
+        ports: 
+            - "3000:3000"
+        #depends_on:
+            #- gateway
+        #links:
+            #- gateway
+
+
+
+    # Databases
+    mongo:
+        container_name: auth-mongo
+        restart: on-failure
+        restart: on-failure
+        image: mongo
+        volumes:
+            - ./MongoDB/init.js:/docker-entrypoint-initdb.d/init.js:ro
+        networks:
+            - crosswalks-network
+        ports: 
+            - "27017:27017"
+
+    mysql:
+        container_name: crosswalks-mysql
+        restart: on-failure
+        image: mysql:5.7
+        volumes:
+            - ./SQL/cross.sql:/docker-entrypoint-initdb.d/cross.sql:ro
+        restart: always
+        env_file: 
+            - ./Environment/mysql-variables.env
+        networks:
+            - crosswalks-network
+        ports:
+            - 3306:3306
+
+    redis:
+        container_name: manager-redis
+        restart: on-failure
+        image: redis
+        env_file: 
+            - ./Environment/redis-variables.env
+        networks:
+            - crosswalks-network
+        ports: 
+            - '6379:6379'
+
+volumes: 
+    data-volume:

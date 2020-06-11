@@ -1,0 +1,26 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="25" id="sv1#area2#page5" name="Creation Error" linkOrder="sv1#area2#page5#ln11">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv1#area2#page5#mssu1" name="Creation Error Msg">
+      <Message xml:space="preserve">Couldn't add a new crosswalk!</Message>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area2#page5#mssu1"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv1#area2#page5#ln11" name="Try Again" to="sv1#area2#page2" automaticCoupling="true" type="normal" validate="true"/>
+</Page>

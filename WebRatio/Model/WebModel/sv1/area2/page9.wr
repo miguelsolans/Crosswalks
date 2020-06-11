@@ -1,0 +1,34 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="610" gr:y="285" id="sv1#area2#page9" name="Crosswalk Pedestrians" landmark="false">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv1#area2#page9#enu5" name="Number of Pedestrians" linkOrder="sv1#area2#page9#enu5#ln18" entity="ent3">
+      <Field id="sv1#area2#page9#enu5#fld13" name="CrosswalkId" type="integer" modifiable="true" attribute="ent3#att6"/>
+      <Field id="sv1#area2#page9#enu5#fld14" name="NumberPedestrians" type="integer" modifiable="true"/>
+      <Link id="sv1#area2#page9#enu5#ln18" name="Update" to="sv1#miu5" type="normal" validate="true">
+        <LinkParameter id="sv1#area2#page9#enu5#ln18#par37" name="CrosswalkId_CrosswalkId" source="sv1#area2#page9#enu5#fld13" target="sv1#miu5.mov1#opm5#icu5#icp13"/>
+        <LinkParameter id="sv1#area2#page9#enu5#ln18#par38" name="NumberPedestrians_NumberPedestrians" source="sv1#area2#page9#enu5#fld14" target="sv1#miu5.mov1#opm5#icu5#icp14"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area2#page9#enu5">
+          <layout:Field field="sv1#area2#page9#enu5#fld13"/>
+          <layout:Field field="sv1#area2#page9#enu5#fld14"/>
+          <layout:Link link="sv1#area2#page9#enu5#ln18"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

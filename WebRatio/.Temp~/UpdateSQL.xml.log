@@ -1,0 +1,44 @@
+[13 Abr 2020 14:54:52] DEBUG Executing SQL script
+[13 Abr 2020 14:54:52] INFO ================================================================================
+[13 Abr 2020 14:54:52] INFO onError= 'stop'
+[13 Abr 2020 14:54:52] INFO autoCommit= 'false'
+[13 Abr 2020 14:54:52] INFO username= 'root'
+[13 Abr 2020 14:54:52] INFO outputPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\WebRatio\.Temp~\UpdateSQL.xml'
+[13 Abr 2020 14:54:52] INFO outputLogPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\WebRatio\.Temp~\UpdateSQL.xml.log'
+[13 Abr 2020 14:54:52] INFO encoding= ''
+[13 Abr 2020 14:54:52] INFO driverClass= 'com.mysql.jdbc.Driver'
+[13 Abr 2020 14:54:52] INFO sqlScript= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\WebRatio\.Temp~\UpdateSQL.sql'
+[13 Abr 2020 14:54:52] INFO eventSocketPort= '52534'
+[13 Abr 2020 14:54:52] INFO statementSeparator= ';'
+[13 Abr 2020 14:54:52] INFO derby.system.home= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
+[13 Abr 2020 14:54:52] INFO password= '1234'
+[13 Abr 2020 14:54:52] INFO url= 'jdbc:mysql://localhost:3306/Crosswalk'
+[13 Abr 2020 14:54:52] INFO ================================================================================
+[13 Abr 2020 14:54:52] INFO Connecting to the Database...
+[13 Abr 2020 14:54:52] INFO Database connection estabilished
+[13 Abr 2020 14:54:52] INFO transaction isolation: 4
+[13 Abr 2020 14:54:52] DEBUG ================================================================================
+[13 Abr 2020 14:54:52] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\WebRatio\.Temp~\UpdateSQL.sql
+[13 Abr 2020 14:54:52] DEBUG Executing statement:  create table `group` ( `oid`  integer  not null, `groupname`  varchar(255), primary key (`oid`) )
+[13 Abr 2020 14:54:52] DEBUG Executing statement:    create table `module` ( `oid`  integer  not null, `moduleid`  varchar(255), `modulename`  varchar(255), primary key (`oid`) )
+[13 Abr 2020 14:54:53] DEBUG Executing statement:    create table `user` ( `oid`  integer  not null, `username`  varchar(255), `password`  varchar(255), `email`  varchar(255), primary key (`oid`) )
+[13 Abr 2020 14:54:53] DEBUG Executing statement:    create table `coordinates` ( `oid`  integer  not null, `latitude`  double precision, `longitude`  double precision, primary key (`oid`) )
+[13 Abr 2020 14:54:53] DEBUG Executing statement:    create table `crosswalk` ( `oid`  integer  not null, `state`  varchar(255), `cars`  integer, `pedestrians`  integer, primary key (`oid`) )
+[13 Abr 2020 14:54:53] DEBUG Executing statement:    alter table `group`  add column  `module_oid`  integer
+[13 Abr 2020 14:54:53] DEBUG Executing statement:  alter table `group`   add index fk_group_module (`module_oid`), add constraint fk_group_module foreign key (`module_oid`) references `module` (`oid`)
+[13 Abr 2020 14:54:53] DEBUG Executing statement:    create table `group_module` ( `group_oid`  integer not null, `module_oid`  integer not null, primary key (`group_oid`, `module_oid`) )
+[13 Abr 2020 14:54:53] DEBUG Executing statement:  alter table `group_module`   add index fk_group_module_group (`group_oid`), add constraint fk_group_module_group foreign key (`group_oid`) references `group` (`oid`)
+[13 Abr 2020 14:54:53] DEBUG Executing statement:  alter table `group_module`   add index fk_group_module_module (`module_oid`), add constraint fk_group_module_module foreign key (`module_oid`) references `module` (`oid`)
+[13 Abr 2020 14:54:53] DEBUG Executing statement:    alter table `user`  add column  `group_oid`  integer
+[13 Abr 2020 14:54:53] DEBUG Executing statement:  alter table `user`   add index fk_user_group (`group_oid`), add constraint fk_user_group foreign key (`group_oid`) references `group` (`oid`)
+[13 Abr 2020 14:54:53] DEBUG Executing statement:    create table `user_group` ( `user_oid`  integer not null, `group_oid`  integer not null, primary key (`user_oid`, `group_oid`) )
+[13 Abr 2020 14:54:54] DEBUG Executing statement:  alter table `user_group`   add index fk_user_group_user (`user_oid`), add constraint fk_user_group_user foreign key (`user_oid`) references `user` (`oid`)
+[13 Abr 2020 14:54:54] DEBUG Executing statement:  alter table `user_group`   add index fk_user_group_group (`group_oid`), add constraint fk_user_group_group foreign key (`group_oid`) references `group` (`oid`)
+[13 Abr 2020 14:54:54] DEBUG Executing statement:    alter table `crosswalk`  add column  `coordinates_oid`  integer
+[13 Abr 2020 14:54:54] DEBUG Executing statement:  alter table `crosswalk`   add index fk_crosswalk_coordinates (`coordinates_oid`), add constraint fk_crosswalk_coordinates foreign key (`coordinates_oid`) references `coordinates` (`oid`)
+[13 Abr 2020 14:54:54] DEBUG Executing statement:    alter table `crosswalk`  add column  `coordinates_oid_2`  integer
+[13 Abr 2020 14:54:54] DEBUG Executing statement:  alter table `crosswalk`   add index fk_crosswalk_coordinates_2 (`coordinates_oid_2`), add constraint fk_crosswalk_coordinates_2 foreign key (`coordinates_oid_2`) references `coordinates` (`oid`)
+[13 Abr 2020 14:54:54] DEBUG ================================================================================
+[13 Abr 2020 14:54:54] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[13 Abr 2020 14:54:54] INFO Database connection closed
+[13 Abr 2020 14:54:54] DEBUG Total time: 2379 milliseconds

@@ -1,0 +1,28 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="280" id="sv1#area2#page7" name="Update Error">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv1#area2#page7#mssu3" name="Update Error Msg" linkOrder="sv1#area2#page7#mssu3#ln8">
+      <Message xml:space="preserve">There was an Error while updating the Crosswalk</Message>
+      <Link id="sv1#area2#page7#mssu3#ln8" name="Try Again" to="sv1#area2#page6" automaticCoupling="true" type="normal" validate="true"/>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area2#page7#mssu3">
+          <layout:Link link="sv1#area2#page7#mssu3#ln8"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -1,0 +1,10 @@
+[{
+  "_id": {
+    "$oid": "5ee14fb98037e5e676201dbc"
+  },
+  "username": "admin",
+  "password": "$2a$10$z2p7uM00h5j7LYWOmcalx.YeY3cyrAdi4H8BljvNYp2JWf2IqsI/y",
+  "email": "admin@crosswalks.com",
+  "fullname": "Administrator",
+  "__v": 0
+}]
